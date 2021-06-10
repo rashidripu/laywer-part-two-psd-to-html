@@ -1,0 +1,304 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+}
+/* header start  */
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar-nav{
+    align-items: flex-end;
+}
+/* header end  */
+
+/* banner start  */
+.banner{
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.icon{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    left: 49%;
+    top: 80%;
+    transform: translate(-49%, 0);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+.banner h1{
+
+color: #fff;
+
+font-size: 65px;
+
+font-weight: 700;
+
+text-transform: uppercase;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 85%;
+    }
+}
+/* banner end  */
+
+/* who we are start  */
+.who-we-are{
+
+padding: 80px 0;
+}
+.who-we-are p{
+
+color: #b0b0b1;
+
+font-family: 'Open Sans', sans-serif;
+}
+.heading span{
+
+display: inline-block;
+
+width: 0px;
+
+height: 3px;
+
+background: #f15727;
+transition: .4s all ease-in-out;
+}
+.heading h1{
+    
+color: #204f87;
+    
+text-transform: uppercase;
+    
+font-size: 35px;
+    
+font-weight: 700;
+}
+.who-we-are:hover .heading span{
+width: 50px;
+}
+/* who we are end */
+
+/* what we do start  */
+.what-we-do{
+
+background: #F7F8F8;
+
+padding: 80px 0;
+background-image: url(../images/bg.png);
+background-position: right bottom;
+background-repeat: no-repeat;
+background-size: 900px;
+}
+.heading-2 span{
+
+display: inline-block;
+
+width: 0px;
+
+height: 4px;
+
+background: #f15727;
+
+transition: .4s all ease-in-out;
+}
+.heading-2 h1{
+
+color: #2b2f85;
+
+font-size: 35px;
+
+text-transform: uppercase;
+
+font-weight: 700;
+}
+.what-we-do:hover .heading-2 span{
+    width: 50px;
+    }
+.image{
+position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .7s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2b2f85+100&0+22,1+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(33,78,149,0) 22%, rgba(43,47,133,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(33,78,149,0) 22%,rgba(43,47,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(33,78,149,0) 22%,rgba(43,47,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#2b2f85',GradientType=0 ); /* IE6-9 */
+}
+.image:hover::before{
+height: 100%;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.title h2{
+    
+font-weight: 700;
+    
+font-size: 21px;
+}
+.image:hover .title{
+    opacity: 1;
+    top: 45%;
+}
+.errow{
+    
+position: absolute;
+    
+top: 75%;
+    
+color: #fff;
+    
+left: 45%;
+transform: translateX(-50%);
+    
+font-size: 35px;
+opacity: 0;
+transition: .5s all ease-in-out;
+}
+.image:hover .errow{
+opacity: 1;
+left: 50%;
+}
+/* what we do end  */
+
+/* attorney section start */
+.attorney{
+    background-image: url(../images/bg-2.png);background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+.attorney-left{
+    padding: 180px 0;
+}
+.attorney-left span{
+display: inline-block;
+width: 0px;
+height: 4px;
+background-color: #f15727;
+transition: .5s all ease-in-out;
+}
+.attorney-left h1{
+
+color: #fff;
+
+text-transform: uppercase;
+
+font-weight: 700;
+
+font-size: 35px;
+}
+.attorney-left p{
+
+color: #929dcf;
+
+font-family: 'Open Sans', sans-serif;
+}
+button{
+
+color: #f15727;
+
+text-transform: uppercase;
+
+background: #2D3A7F;
+
+border: none;
+
+font-family: 'Open Sans', sans-serif;
+
+font-weight: 600;
+}
+.attorney:hover .attorney-left span{
+    width: 50px;
+}
+/* attorney section end */
+
+/* language section start */
+.language:hover .heading-2 span{
+    width: 50px;
+    }
+    .btn{
+        color: #f15727;
+
+text-transform: uppercase;
+
+background: #fff;
+
+border: none;
+    }
+    .language{
+
+    }
+    .language h2{
+        color: #2b2f85;
+        text-transform: uppercase;
+        padding-top: 60px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .language p{
+        color: #b1b0b1;
+        font-family: 'Open Sans', sans-serif;
+    }
+/* language section end */
+
+/* contact us section start */
+
+.contact{
+    background-color: #28377E;
+    height: 500px;
+}
+.contact h1{color: #fff;font-weight: 700;font-size: 35px;}
+.contact:hover .heading-2 span{
+    width: 50px;
+    }
+/* contact us section end */
+
+/* footer start */
+footer{
+    
+background: #0D1234;
+    
+padding: 40px 0 12px 0;
+}
+footer p{
+    color: #616ca8;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer-icon i{
+    
+color: #fff;
+    
+margin: 0 10px;
+}
+/* footer end */
